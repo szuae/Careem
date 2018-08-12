@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "search.com.sstest"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BaseURL", '"https://api.themoviedb.org/3/"'
+            buildConfigField "String", "BaseURLForImage", '"http://image.tmdb.org/t/p/w300/"'
+            buildConfigField "String", "apiKey", '""'
+            buildConfigField "String", "readAccessToken", '""'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BaseURL", '"https://api.themoviedb.org/3/"'
+            buildConfigField "String", "BaseURLForImage", '"https://image.tmdb.org/t/p/w300/"'
+            buildConfigField "String", "apiKey", '"6e616d3b7e79a0d56198913754373704"'
+            buildConfigField "String", "readAccessToken", '"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZTYxNmQzYjdlNzlhMGQ1NjE5ODkxMzc1NDM3MzcwNCIsInN1YiI6IjViNjBhZDI2YzNhMzY4MTg4NjAwMmM0MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Y_qzQ6TpCeM_kGEeggGLIvgRG_fg-N68vczX65GT4wk"'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Support
+    implementation libs.support.v4
+    implementation libs.support.design
+    implementation libs.support.cardview
+    implementation libs.support.recyclerview
+    implementation libs.support.constraint_layout
+
+
+    //Dagger 2
+    implementation libs.dagger.dagger
+    annotationProcessor libs.dagger.compiler
+
+    implementation libs.commons.collections
+    implementation libs.commons.lang
+
+    //butterknife
+    implementation libs.butterknife
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+
+
+    //rx
+    implementation libs.rx.rxandroid
+    implementation libs.rx.rxjava
+
+    //retrofit
+    implementation libs.retrofit.retrofit
+    implementation libs.retrofit.gson_converter
+    implementation libs.retrofit.rxjava_adapter
+
+    implementation libs.retrofit.rxadapter
+
+    implementation libs.okhttp.okhttp
+    implementation libs.okhttp.logging_interceptor
+
+    implementation libs.glide
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    implementation libs.jackson.annotations
+
+
+    //unit test
+    testImplementation libs.mockito_core
+    testImplementation libs.junit
+
+}
+

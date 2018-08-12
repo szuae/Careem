@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CareemTest</string>
+    <string name="start_search_button_title">Click to Search Movies</string>
+    <string name="no_internet_msg">Internet not connected! Please connect and try again</string>
+    <string name="start_search_title_click">Click on Button</string>
+    <string name="movie_trailer_click">Watch Movie Trailer</string>
+    <string name="movie_Revenue_label">Revenue: </string>
+    <string name="movie_Release_label">Released On: </string>
+    <string name="movie_type_label">Movie Type: </string>
+    <string name="no_more_data">No more data to load...</string>
+    <string name="movie_list">Movie List</string>
+    <string name="movie_detail">Movie Details</string>
+    <string name="wrong_date_message">Check dates!! may be not right selection...</string>
+</resources>

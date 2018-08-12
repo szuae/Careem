@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/list_toolbar_android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/list_toolbar_android"
+        android:background="@color/grey_medium" />
+
+    <LinearLayout
+        android:id="@+id/date_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seperator"
+        android:background="@color/grey_medium"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/from_date"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/span_3dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:background="@drawable/bottom_line"
+            android:hint="From Date" />
+
+        <TextView
+            android:id="@+id/to_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/span_3dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/bottom_line"
+            android:hint="To Date" />
+
+        <Button
+            android:id="@+id/filter_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Filter" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date_range">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movie_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

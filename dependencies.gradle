@@ -1,0 +1,85 @@
+ext {
+    versions = [
+            android_support    : "27.1.0",
+            commons_collections: "4.0",
+            commons_lang       : "3.3.2",
+            commons_io         : "2.4",
+            constraint_layout  : "1.0.2",
+            dagger             : "2.14.1",
+            glide              : "3.8.0",
+            jackson            : "2.2.4",
+            jackson_mapper_asl : "1.9.13",
+            json               : "20160810",
+            jsr305             : "2.0.3",
+            junit              : "4.12",
+            kotlin             : "1.2.31",
+            mockito            : "2.8.9",
+            okhttp             : "3.9.1",
+            retrofit           : "2.3.0",
+            rxjava             : "2.1.9",
+            rxandroid          : "2.0.2",
+            timber             : "4.6.0",
+            arch               : "1.0.0",
+            butterknife        : "8.8.1",
+            glide              : "4.7.1",
+            retroAdapter       : "1.0.0"
+
+    ]
+    libs = [
+            support     : [
+                    v4               : "com.android.support:support-v4:${versions.android_support}",
+                    appcompat_v7     : "com.android.support:appcompat-v7:${versions.android_support}",
+                    design           : "com.android.support:design:${versions.android_support}",
+                    constraint_layout: "com.android.support.constraint:constraint-layout:${versions.constraint_layout}",
+                    annotations      : "com.android.support:support-annotations:${versions.android_support}",
+                    cardview         : "com.android.support:cardview-v7:${versions.android_support}",
+                    recyclerview     : "com.android.support:recyclerview-v7:${versions.android_support}",
+            ],
+            commons     : [
+                    collections: "org.apache.commons:commons-collections4:${versions.commons_collections}",
+                    lang       : "org.apache.commons:commons-lang3:${versions.commons_lang}",
+                    io         : "commons-io:commons-io:${versions.commons_io}",
+                    arch       : "android.arch.lifecycle:common:${versions.arch}"
+            ],
+            dagger      : [
+                    dagger  : "com.google.dagger:dagger:${versions.dagger}",
+                    compiler: "com.google.dagger:dagger-compiler:${versions.dagger}"
+            ],
+            glide       : "com.github.bumptech.glide:glide:${versions.glide}",
+            jackson     : [
+                    annotations: "com.fasterxml.jackson.core:jackson-annotations:${versions.jackson}",
+                    core       : "com.fasterxml.jackson.core:jackson-core:${versions.jackson}",
+                    databind   : "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}",
+                    mapper_asl : "org.codehaus.jackson:jackson-mapper-asl:${versions.jackson_mapper_asl}"
+            ],
+            json        : "org.json:json:${versions.json}",
+            jsr305      : "com.google.code.findbugs:jsr305:${versions.jsr305}",
+            junit       : "junit:junit:${versions.junit}",
+            kotlin      : [
+                    stdlib_jdk7: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
+            ],
+            mockito_core: "org.mockito:mockito-core:${versions.mockito}",
+            okhttp      : [
+                    okhttp             : "com.squareup.okhttp3:okhttp:${versions.okhttp}",
+                    logging_interceptor: "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
+            ],
+            retrofit    : [
+                    retrofit      : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+                    gson_converter: "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+                    rxjava_adapter: "com.squareup.retrofit2:adapter-rxjava2:${versions.retrofit}",
+                    rxadapter     : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${versions.retroAdapter}"
+
+            ],
+
+            //    implementation:$RETROFIT_ADAPTER_VERSION"
+
+            rx          : [
+                    rxjava   : "io.reactivex.rxjava2:rxjava:${versions.rxjava}",
+                    rxandroid: "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}"
+            ],
+            glide       : "com.github.bumptech.glide:glide:${versions.glide}",
+            timber      : "com.jakewharton.timber:timber:${versions.timber}",
+            butterknife : "com.jakewharton:butterknife:${versions.butterknife}"
+
+    ]
+}

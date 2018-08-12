@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_margin">16dp</dimen>
+    <dimen name="span_5dp">5dp</dimen>
+    <dimen name="span_3dp">3dp</dimen>
+    <dimen name="span_10dp">10dp</dimen>
+    <dimen name="span_20dp">20dp</dimen>
+    <dimen name="span_30dp">30dp</dimen>
+    <dimen name="span_100dp">100dp</dimen>
+    <dimen name="span_150dp">150dp</dimen>
+    <dimen name="span_40dp">40dp</dimen>
+    <dimen name="span_60dp">60dp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_30sp">30sp</dimen>
+    <dimen name="height_150dp">150dp</dimen>
+    <dimen name="divider_1dp">1dp</dimen>
+</resources>
